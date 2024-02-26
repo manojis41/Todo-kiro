@@ -1,0 +1,22 @@
+{
+    "name": "sapiens/todo",
+    "description": "This is todo list webapp made using HTML, CSS and Javascript as frontend building blocks. PHP is used to do the backend part and Twig is used for tempelate generation and mysql as a database.",
+    "type": "project",
+    "require": {
+    	"php": "^7.4",
+        "twig/twig": "^3.8"
+    },
+    "license": "GNU General Public License v3.0",
+    "autoload": {
+        "psr-4": {
+            "Sapiens\\Todo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agent41",
+            "email": "contact@manoj41.com.np"
+        }
+    ],
+    "minimum-stability": "stable"
+}

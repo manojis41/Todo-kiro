@@ -1,0 +1,121 @@
+* {
+  border: none;
+}
+
+@media screen and (max-width: 762px) {
+  .card {
+    width: 100% !important;
+  }
+}
+.task[style="display: none;"] {
+  background: red;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 9, 17);
+}
+
+section[name="head"] {
+  padding: 16px 0;
+  border-bottom: 8px double #a12d50b4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 50%;
+  background-color: #fff49a;
+  border-radius: 24px;
+  min-height: 90vh;
+}
+
+form[action="/add"],form[action="/todo/add"] {
+  border-top: 2px dotted #65a548;
+}
+
+input {
+  border: none;
+}
+
+input[type="text"] {
+  height: 24px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.11);
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dotted #65a548;
+}
+
+input[type="checkbox"] {
+  border: none;
+  width: 24px;
+  height: 24px;
+  background: none;
+  cursor: pointer;
+}
+
+form[onsubmit] {
+  width: 100%;
+  display: flex;
+}
+
+div[name="options"] {
+  display: inline-flex;
+}
+
+[type="submit"],
+button {
+  color: darkslategrey;
+  font-size: 18px;
+  background: none;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+[type="submit"]:hover,
+button:hover {
+  color: #2e93be;
+}
+
+.btn-primary {
+  font-size: 16px;
+  font-weight: bold;
+  width: 48px;
+  background: #3584e4;
+  color: white;
+}
+button[name="remove"]:hover {
+  color: red;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: #2a7de2;
+}
+a[href] {
+  color: #37acdd;
+}
+
+a[href]:visited {
+  color: grey;
+}
+
+a[href]:hover {
+  color: #2e93be;
+}
+
+.task s {
+  font-style: italic;
+}

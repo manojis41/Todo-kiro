@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %} {% block title %}Completed Tasks{%endblock %} {% block
+heading %}
+<h3>Completed Tasks:</h3>
+{% endblock %} {% block menue%}<a href="/todo/">Current Tasks></a>{%endblock %}
+
+{% block list %} {% for completed in tasks%}
+<div class="task" id="tsk{{completed.id}}">
+  <form method="POST">
+    <input type="checkbox" checked />
+    <s>{{completed.task}}</s>
+  </form>
+
+  <form method="POST" id="{{completed.id}}">
+    <input value="{{completed.id}}" name="boxid" hidden />
+    <input value="completed" name="type" hidden />
+  </form>
+
+  <div name="options">
+    <button name="edit">
+      <i class="fa-regular fa-pen-to-square"></i>
+    </button>
+    <button name="remove">
+      <i class="fa-regular fa-trash-can"></i>
+    </button>
+  </div>
+</div>
+{% endfor %} {% endblock %}
