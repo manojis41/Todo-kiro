@@ -1,0 +1,5 @@
+vendor/** linguist-detectable=false 
+*.json linguist-detectable=false 
+*.txt linguist-detectable=false 
+*.lock linguist-detectable=false 
+static/font-awesome linguist-detectable=false  
