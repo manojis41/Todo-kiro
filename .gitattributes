@@ -2,4 +2,4 @@ vendor/** linguist-vendored
 *.json linguist-vendored 
 *.txt linguist-vendored
 *.lock linguist-vendored
-static/font-awesome linguist-vendored  
+static/font-awesome/** linguist-vendored
